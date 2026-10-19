@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - run: dotnet restore UCImageCombo.slnx
+      - run: dotnet format UCImageCombo.slnx --verify-no-changes --no-restore
+      - run: dotnet build UCImageCombo.slnx --configuration Release --no-restore
+      - run: dotnet test UCImageCombo.slnx --configuration Release --no-build
+      - run: dotnet pack src/UCImageCombo/UCImageCombo.csproj --configuration Release --no-build --output artifacts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nuget-package
+          path: artifacts/*
