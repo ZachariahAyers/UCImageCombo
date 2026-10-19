@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/UCImageCombo/UCImageCombo.csproj" />
+  <Project Path="tests/UCImageCombo.Tests/UCImageCombo.Tests.csproj" />
+  <Project Path="samples/UCImageCombo.Sample/UCImageCombo.Sample.csproj" />
+</Solution>
