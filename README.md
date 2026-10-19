@@ -26,6 +26,14 @@ cd UCImageCombo
 dotnet run --project samples/UCImageCombo.Sample
 ```
 
+The control is not on nuget.org. To use it in your own app, pack it and reference the local package:
+
+```bash
+dotnet pack src/UCImageCombo/UCImageCombo.csproj -c Release -o artifacts
+cd <your app folder>
+dotnet add package UCImageCombo --source <path to this clone>/artifacts
+```
+
 Use it in your own form:
 
 ```csharp

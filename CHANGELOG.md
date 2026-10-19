@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.0
+## v2.0.0 - 2026-10-19
 
 Rebuilt on .NET 10 with the same purpose: a combo box that draws an icon, colour and bold weight per item.
 
@@ -12,6 +12,6 @@ Rebuilt on .NET 10 with the same purpose: a combo box that draws an icon, colour
 - Breaking: `ImageComboItem.ItemText` is now `Text`; the five constructors are one `ImageComboItem(string text, int imageIndex = -1)` with `Indicate`, `ForeColor` and `Tag` as properties; `ImageCombo.ImageList` is `null` until set.
 - Added xUnit tests, a sample app, a CI workflow and a NuGet package definition.
 
-## 1.0.0
+## v1 - 2020-12-11
 
-The original 2019 .NET Framework 4.7.2 control. Tagged `v1`.
+The original 2019 .NET Framework 4.7.2 control.

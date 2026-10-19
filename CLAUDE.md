@@ -1,6 +1,6 @@
 # UCImageCombo
 
-A Windows Forms combo box (`ImageCombo`) that draws an icon, a custom colour and an optional bold weight beside each item. NuGet library on net10.0-windows, with xUnit tests and a sample app.
+A Windows Forms combo box (`ImageCombo`) that draws an icon, a custom colour and an optional bold weight beside each item. Builds a NuGet package (not published on nuget.org) for net10.0-windows, with xUnit tests and a sample app.
 
 ## Commands
 
