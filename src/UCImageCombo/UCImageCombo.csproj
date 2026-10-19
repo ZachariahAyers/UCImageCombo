@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>UCImageCombo</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Package">
+    <PackageId>UCImageCombo</PackageId>
+    <Version>2.0.0</Version>
+    <Authors>Zachariah Ayers</Authors>
+    <Company>Ayers Electronics</Company>
+    <Product>UCImageCombo</Product>
+    <Copyright>Copyright Ayers Electronics Inc</Copyright>
+    <Description>A Windows Forms combo box that draws an icon, a custom colour and an optional bold weight beside each item.</Description>
+    <PackageTags>winforms;combobox;imagelist;owner-draw;control;dotnet</PackageTags>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/ZachariahAyers/UCImageCombo</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ZachariahAyers/UCImageCombo</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <InternalsVisibleTo Include="UCImageCombo.Tests" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
