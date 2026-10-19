@@ -30,7 +30,7 @@ internal sealed class MainForm : Form
         combo.Items.Add("A plain string");
 
         var echo = new Label { AutoSize = true, Location = new Point(16, 56), Text = "Pick an item." };
-        combo.SelectedIndexChanged += (_, _) => echo.Text = $"Selected: {combo.SelectedItem}";
+        combo.SelectedIndexChanged += (_, _) => echo.Text = $"Selected: {combo.Text}";
 
         Controls.Add(combo);
         Controls.Add(echo);
